@@ -147,22 +147,17 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginTop: 10,
-    flexWrap: 'wrap',
+    flexWrap: 'nowrap', // Ensures that content doesn't wrap and push buttons down
   },
   itemTextContainer: {
-    flex:'1',
+    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    gap:'15'
+    gap:15,
   },
   itemText: {
     fontSize: 18,
     color: 'black',
-    //flexShrink: 1,
-  },
-  textContainer: {
-    //flexShrink: 1,
-    alignItems: 'center'
   },
   dueDateText: {
     fontSize: 15,
@@ -175,10 +170,15 @@ const styles = StyleSheet.create({
   completedText: {
     textDecorationLine: 'line-through',
     color: '#666666',
+
   },
   actions: {
     flexDirection: 'row',
-    gap: 15,
     alignItems: 'center',
+    justifyContent: 'flex-end',
+    marginLeft: 10,
+    gap:10,
   },
 });
+
+
