@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList } from 'react-native';
-import ToDoItem from './TodoItem'; // Import ToDoItem componentz
+import ToDoItem from './TodoItem'; 
 
 export default function ToDoList({ tasks, searchText, filter, setTasks,setDate,date,setEditTaskId,setTask }) {
   const applyFilter = (task) => {
